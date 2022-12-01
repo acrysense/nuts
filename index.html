@@ -64,13 +64,61 @@
 								<button class="c-languages__btn">EN</button>
 							</li>
 						</ul>
+						<button class="hamburger" id="hamburger-toggle">
+							<span class="hamburger__inner"></span>
+							<span class="hamburger__inner"></span>
+							<span class="hamburger__inner"></span>
+						</button>
 					</div>
 				</div>
 			</div>
 		</header>
 		<!-- end of header -->
 		<!-- mobile menu -->
-		<div class="mobile-menu" id="mobile-menu"></div>
+		<div class="mobile-menu" id="mobile-menu">
+			<div class="mobile-menu__wrapper">
+				<nav class="nav mobile-menu__nav">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="#" class="nav__link">О PPPoker</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">О нас</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Отзывы</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="mobile-menu__group">
+					<ul class="c-socnav mobile-menu__socnav">
+						<li class="c-socnav__item">
+							<a href="#" class="c-socnav__link">
+								<svg class="c-socnav__icon">
+									<use xlink:href="img/sprite.svg#icon-whatsapp"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="c-socnav__item">
+							<a href="#" class="c-socnav__link">
+								<svg class="c-socnav__icon">
+									<use xlink:href="img/sprite.svg#icon-telegram"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+					<ul class="c-languages mobile-menu__languages">
+						<li class="c-languages__item c-languages__item--active">
+							<button class="c-languages__btn">RU</button>
+						</li>
+						<li class="c-languages__item">
+							<button class="c-languages__btn">EN</button>
+						</li>
+					</ul>
+					<a href="#" class="mobile-menu__btn btn btn--sm btn--border">Регистрация</a>
+				</div>
+			</div>
+		</div>
 		<!-- end of mobile menu -->
 		<!-- content -->
 		<div class="wrapper__content">
@@ -241,6 +289,7 @@
 								</div>
 							</div>
 						</div>
+						<div class="swiper-pagination"></div>
 						<button class="swiper-button-next" aria-label="Далее">
 							<svg class="swiper-button-icon">
 								<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
@@ -300,7 +349,7 @@
 		<!-- footer -->
 		<footer class="footer" id="footer">
 			<div class="container">
-				<div class="footer__wrapper">
+				<div class="footer__wrapper footer__wrapper--main">
 					<div class="footer__inner">
 						<a href="index.html" class="footer__logotype">
 							<img src="img/logotype.png" width="165px" height="66px" alt="NUTS">
@@ -342,7 +391,7 @@
 						<a href="mailto:hello@nuts.com" class="footer__link">hello@nuts.com</a>
 					</div>
 				</div>
-				<div class="footer__wrapper footer__wrapper--center">
+				<div class="footer__wrapper footer__wrapper--bottom">
 					<p class="footer__copyright">Сайт носит информационный характер, не содержит ссылки на онлайн покер-румы и не проводит игры на деньги</p>
 					<p class="footer__copyright">Nuts ⓒ 2022</p>
 				</div>
