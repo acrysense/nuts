@@ -90,31 +90,33 @@
 						</li>
 					</ul>
 				</nav>
-				<div class="mobile-menu__group">
-					<ul class="c-socnav mobile-menu__socnav">
-						<li class="c-socnav__item">
-							<a href="#" class="c-socnav__link">
-								<svg class="c-socnav__icon">
-									<use xlink:href="img/sprite.svg#icon-whatsapp"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="c-socnav__item">
-							<a href="#" class="c-socnav__link">
-								<svg class="c-socnav__icon">
-									<use xlink:href="img/sprite.svg#icon-telegram"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
-					<ul class="c-languages mobile-menu__languages">
-						<li class="c-languages__item c-languages__item--active">
-							<button class="c-languages__btn">RU</button>
-						</li>
-						<li class="c-languages__item">
-							<button class="c-languages__btn">EN</button>
-						</li>
-					</ul>
+				<div class="mobile-menu__bottom">
+					<div class="mobile-menu__group">
+						<ul class="c-socnav mobile-menu__socnav">
+							<li class="c-socnav__item">
+								<a href="#" class="c-socnav__link">
+									<svg class="c-socnav__icon">
+										<use xlink:href="img/sprite.svg#icon-whatsapp"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="c-socnav__item">
+								<a href="#" class="c-socnav__link">
+									<svg class="c-socnav__icon">
+										<use xlink:href="img/sprite.svg#icon-telegram"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+						<ul class="c-languages mobile-menu__languages">
+							<li class="c-languages__item c-languages__item--active">
+								<button class="c-languages__btn">RU</button>
+							</li>
+							<li class="c-languages__item">
+								<button class="c-languages__btn">EN</button>
+							</li>
+						</ul>
+					</div>
 					<a href="#" class="mobile-menu__btn btn btn--sm btn--border">Регистрация</a>
 				</div>
 			</div>
@@ -175,9 +177,14 @@
 			<section class="promo" id="promo">
 				<div class="container">
 					<div class="promo__wrapper">
-						<picture class="promo__img">
-							<img src="img/promo.png" alt="NUTS">
-						</picture>
+						<div class="promo__images">
+							<picture class="promo__img">
+								<img src="img/about-01.png" alt="Image">
+							</picture>
+							<picture class="promo__img">
+								<img src="img/about-02.png" alt="Image">
+							</picture>
+						</div>
 						<div class="promo__body">
 							<h2 class="promo__heading">nuts. кто мы?</h2>
 							<ul class="promo__list c-list">
@@ -210,7 +217,7 @@
 			<div class="subscribe" id="subscribe">
 				<div class="container">
 					<div class="subscribe__wrapper">
-						<h2 class="subscribe__heading">ПОДПИШИСЬ НА NUTS</h2>
+						<h2 class="subscribe__heading">ПОДПИШИСЬ НА&nbsp;NUTS</h2>
 						<ul class="c-socnav subscribe__socnav">
 							<li class="c-socnav__item">
 								<a href="#" class="c-socnav__link">
@@ -312,10 +319,14 @@
 							<h2 class="register__heading">ЗАРЕГИСТРИРОВАТЬСЯ <br>В NUTS</h2>
 							<ul class="register__list">
 								<li class="register__item">
-									<span class="register__elem">Заполни форму регистрации</span>
+									<div class="register__elem">
+										<span class="register__value">Заполни форму регистрации</span>
+										</divv>
 								</li>
 								<li class="register__item">
-									<span class="register__elem">Вступи в клуб в течение 10 минут</span>
+									<div class="register__elem">
+										<span class="register__value">Вступи в клуб в течение 10 минут</span>
+									</div>
 								</li>
 							</ul>
 						</div>
