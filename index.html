@@ -334,14 +334,19 @@
 							</ul>
 						</div>
 						<form action="#" class="register-form register__form">
+							<!-- hidden required fields -->
+							<input type="hidden" name="project_name" value="30610477.218853@parser.amocrm.ru" />
+							<input type="hidden" name="admin_email" value="30610477.218853@parser.amocrm.ru" />
+							<input type="hidden" name="form_subject" value="Заявка с сайта NUTS" />
+							<!-- end of hidden required fields -->
 							<div class="input-group register-form__input">
-								<input type="text" class="input-group__input" placeholder="Имя">
+								<input type="text" class="input-group__input" name="Имя" placeholder="Имя" required>
 							</div>
 							<div class="input-group register-form__input">
-								<input type="text" id="input-phone" class="input-group__input" placeholder="Телефон">
+								<input type="text" id="input-phone" name="Телефон" class="input-group__input" required>
 							</div>
 							<div class="input-group register-form__input">
-								<input type="text" class="input-group__input" placeholder="Ник Telegram">
+								<input type="text" class="input-group__input" name="Ник Telegram" placeholder="Ник Telegram" required>
 							</div>
 							<button class="register-form__btn btn">Отправить заявку</button>
 						</form>
@@ -424,6 +429,8 @@
 	</div>
 	<!-- end of wrapper -->
 	<!-- scripts -->
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.js"></script>v
 	<script src="js/vendor.min.js"></script>
 	<script src="js/app.min.js"></script>
 	<script>
